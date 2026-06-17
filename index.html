@@ -1,12 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>Sign-Up</title>
+
 </head>
 <body>
-  
+  <main>
+    <div class="section-left splash">
+      <!-- background splash image by steve pancrate (https://unsplash.com/@redaska) -->
+      <img src="./imgs/splash.jpg" alt="splash-image">  
+    </div >
+
+    <section class="section-right">
+
+      <h1>Get started today</h1>
+      <p class="subtitle"><em>You know you want to.</em></p>
+
+      <form action="#" method="post">
+        <section class="information-wrapper">
+          <div class="information-left">
+            <div>
+              <label for="first-name">FIRST NAME</label>
+            </div>
+            <input type="text" id="first-name" placeholder="Ex. John">
+
+            <div>
+              <label for="email">EMAIL</label>
+            </div>
+            <input type="email" id="email" placeholder="Ex. you@email.com">
+
+            <div>
+              <label for="password">PASSWORD</label>
+            </div>
+            <input type="password" id="password">
+          </div>
+
+          <div class="information-right">
+            <div>
+              <label for="last-name">LAST NAME</label>
+            </div>
+            <input type="text" id="last-name" placeholder="Ex. Doe">
+
+            <div>
+              <label for="phone-number">PHONE NUMBER</label> </div>
+            <input type="text" id="phone-number" placeholder="Ex. +1(555)555-5555">
+
+            <div>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+            </div>
+            <input type="password" id="confirm-password">
+          </div> <!-- information-wrapper ends here -->
+        </section>
+        <div class="submit-button">
+          <button type="submit">Create Account</button>
+          <p class="log-in-prompt">Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+    </section  </main>
 </body>
 </html>
