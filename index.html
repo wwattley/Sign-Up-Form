@@ -30,33 +30,35 @@
             <div>
               <label for="first-name">FIRST NAME</label>
             </div>
-            <input type="text" id="first-name" placeholder="Ex. John">
+            <input type="text" id="first-name" name="user_first_name" placeholder="Ex. John" required>
 
             <div>
               <label for="email">EMAIL</label>
             </div>
-            <input type="email" id="email" placeholder="Ex. you@email.com">
+            <input type="email" id="email" name="user_email" placeholder="Ex. you@email.com" required>
 
             <div>
               <label for="password">PASSWORD</label>
             </div>
-            <input type="password" id="password">
+            <input type="password" id="password" name="user_password" required>
           </div>
 
           <div class="information-right">
             <div>
               <label for="last-name">LAST NAME</label>
             </div>
-            <input type="text" id="last-name" placeholder="Ex. Doe">
+            <input type="text" id="last-name" name="user_last_name" placeholder="Ex. Doe" required>
 
             <div>
-              <label for="phone-number">PHONE NUMBER</label> </div>
-            <input type="text" id="phone-number" placeholder="Ex. +1(555)555-5555">
+              <label for="phone-number">PHONE NUMBER</label>
+            </div>
+            <input type="text" id="phone-number" name="user_phone_number" placeholder="Ex. (555)555-5555" 
+              pattern="\(\d{3}\)\d{3}-\d{4}" required>
 
             <div>
               <label for="confirm-password">CONFIRM PASSWORD</label>
             </div>
-            <input type="password" id="confirm-password">
+            <input type="password" id="confirm-password" name="confirm_password" required>
           </div> <!-- information-wrapper ends here -->
         </section>
         <div class="submit-button">
