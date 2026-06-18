@@ -68,6 +68,14 @@ button {
   --alt-bg-colour: #222623;
 }
 
+.splash {
+  position: relative;
+}
+.photo-credits {
+  position: absolute;
+  top: 0;
+}
+
 .section-right,
 input {
   background-color: black;
@@ -94,8 +102,3 @@ button {
 
   cursor: pointer;
 }
-/* format debugging */
-/* form, */
-/* .information-wrapper { */
-/*   border: 1px solid red; */
-/* } */
