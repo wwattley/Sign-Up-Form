@@ -91,6 +91,12 @@ input {
   border: none;
   border-bottom: 1px solid white;
 }
+input:user-invalid {
+  border-color: red;
+}
+input:user-valid {
+  border-color: green;
+}
 
 button {
   font-size: 1.25rem;
