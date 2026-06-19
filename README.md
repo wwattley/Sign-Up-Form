@@ -15,6 +15,7 @@ Ths project showcases a sign-up form interface featuring a branded left sidebar 
 ## Built With
 * HTML
 * CSS
+* Flexbox
 
 ## Notes
 * This is a static HTML/CSS project (form submission is not functional)
