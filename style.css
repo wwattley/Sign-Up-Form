@@ -3,3 +3,79 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Fontdiner Swanky", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-color: var(--off-white);
+}
+
+:root { /* colour palette */
+  --bright-yellow: rgb(249, 252, 50);
+  --pink: rgb(255, 86, 120);
+  
+  --light-green: rgb(144, 238, 144);
+  --gradient-a: rgb(166,241,166);
+  --gradient-b: rgb(188,245,188);
+  --gradient-c: rgb(211,248,211);
+  --grandient-d: rgb(233,252,233);
+  --off-white: rgb(249, 241, 241);
+}
+
+.content {
+  display: flex;
+  width: 1600px;
+  height: 800px;
+
+  border: 5px solid black;
+  border-radius: 5px;
+
+  background-image: linear-gradient(
+                    to right,
+                    var(--light-green),
+                    var(--gradient-a),
+                    var(--gradient-b),
+                    var(--gradient-c),
+                    var(--grandient-d),
+                    var(--off-white)
+  );
+
+  /* 
+    card shadow code example from
+    https://www.w3schools.com/css/css3_shadows_box.asp
+  */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.splash-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.splash-wrapper img {
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+}
+.text-wrapper {
+  text-align: center;
+
+  padding: 96px;
+
+  font-size: 2rem;
+}
+
+.form-container {
+  flex: 2;
+}
