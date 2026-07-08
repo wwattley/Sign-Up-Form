@@ -114,6 +114,12 @@ input {
   border: none;
   border-bottom: 2px solid black;
 }
+input:user-valid {
+  border-color: mediumspringgreen;
+}
+input:user-invalid {
+  border-color: red;
+}
 .button-row {
   font-family: inherit;
   font-weight: 900;
