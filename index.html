@@ -36,6 +36,7 @@
             id="first-name"
             placeholder="Ex. John"
             name="first_name"
+            required
           >
         </div>
 
@@ -46,6 +47,7 @@
             id="last-name"
             placeholder="Ex. Doe"
             name="last_name"
+            required
           >
         </div>
 
@@ -56,6 +58,7 @@
             id="email"
             placeholder="Ex. you@example.com"
             name="email"
+            required
           >
         </div>
 
@@ -66,6 +69,8 @@
             id="phone-number"
             placeholder="Ex. (555) 555-5555"
             name="phone_number"
+            pattern="\(\d{3}\) \d{3}-\d{4}"
+            required
           >
         </div>
 
@@ -75,6 +80,8 @@
             type="password"
             id="password"
             name="password"
+            minlength="8"
+            required
           >
         </div>
 
@@ -84,6 +91,7 @@
             type="password"
             id="confirm-password"
             name="confirm_password"
+            required
           >
         </div>
 
