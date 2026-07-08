@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Rubik Spray Paint", sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
@@ -27,7 +27,7 @@ body {
   --gradient-a: rgb(166,241,166);
   --gradient-b: rgb(188,245,188);
   --gradient-c: rgb(211,248,211);
-  --grandient-d: rgb(233,252,233);
+  --gradient-d: rgb(233,252,233);
   --off-white: rgb(249, 241, 241);
 }
 
@@ -45,8 +45,7 @@ body {
                     var(--gradient-a),
                     var(--gradient-b),
                     var(--gradient-c),
-                    var(--grandient-d),
-                    var(--off-white)
+                    var(--gradient-d)
   );
 
   /* 
@@ -68,7 +67,8 @@ body {
  height: 100%;
  object-fit: contain;
 }
-.text-wrapper {
+.title-wrapper {
+  font-family: "Rubik Spray Paint";
   text-align: center;
 
   padding: 96px;
