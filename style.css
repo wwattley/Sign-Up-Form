@@ -86,7 +86,8 @@ body {
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  place-items: center;
+  gap: 0.5rem;
 
   width: 700px;
   height: 500px;
@@ -103,10 +104,19 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+input {
+  padding: 6px;
+
+  background-color: lightyellow;
+  
+  border: none;
+  border-bottom: 2px solid black;
 }
 .button-row {
   font-family: inherit;
+  font-weight: 900;
   cursor: pointer;
 
   grid-column: span 2;
@@ -114,9 +124,16 @@ form {
 
   height: 50px;
   width: 150px;
- 
+  
+  border: none;
   border-radius: 5px;
-  background-color: white;
+  background-color: var(--pink);
+
+  box-shadow: 10px 10px black;
+  transition: box-shadow 0.60s; 
+}
+.button-row:hover{
+  box-shadow: 0px 0px black;
 }
 .login-prompt,
 .disclaimer {
